@@ -26,17 +26,17 @@ const countriesSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: {
-    [fetchAsyncCountries.fulfilled]: (state, {payload}) => {
-      return {...state, countries: payload}
+    [fetchAsyncCountries.fulfilled]: (state, { payload }) => {
+      return {...state, countries: payload};
     },
-    [fetchAsyncCountryDetail.fulfilled]: (state, {payload}) => {
-      return {...state, selectedCountry: payload}
+    [fetchAsyncCountryDetail.fulfilled]: (state, { payload }) => {
+      return {...state, selectedCountry: payload};
     },
-    [fetchSearchedCountryDetail.fulfilled]: (state, {payload}) => {
-      return {...state, countries: payload}
+    [fetchSearchedCountryDetail.fulfilled]: (state, { payload }) => {
+      return {...state, countries: payload};
     },
-  }
-})
+  },
+});
 
 export default countriesSlice.reducer;
 export const getAllCountries = (state) => state.countries.countries;
