@@ -1,3 +1,6 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable csstree/validator  */
+
 @use '../../sass/abstracts/variables';
 
 .filter {
@@ -22,7 +25,7 @@
   color: variables.$clr_light-mode-text;
 }
 
-.filter__regions select{
+.filter__regions select {
   background-color: variables.$clr-dark-elements;
   border: none;
   padding: 10px 15px;
