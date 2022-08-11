@@ -1,3 +1,5 @@
+/* eslint-disable arrow-body-style */
+
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -27,13 +29,13 @@ const countriesSlice = createSlice({
   reducers: {},
   extraReducers: {
     [fetchAsyncCountries.fulfilled]: (state, { payload }) => {
-      return {...state, countries: payload};
+      return { ...state, countries: payload };
     },
     [fetchAsyncCountryDetail.fulfilled]: (state, { payload }) => {
-      return {...state, selectedCountry: payload};
+      return { ...state, selectedCountry: payload };
     },
     [fetchSearchedCountryDetail.fulfilled]: (state, { payload }) => {
-      return {...state, countries: payload};
+      return { ...state, countries: payload };
     },
   },
 });
